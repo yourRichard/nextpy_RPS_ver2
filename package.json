@@ -1,33 +1,27 @@
 {
-    "name": "best_button",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yourRichard/npm_package_test.git"
-    },
-    "version": "1.0.0",
-    "description": "This is a test component library and it is the best trust me mate",
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "rmdir /s /q dist && prettier --write src/ && npm run build:esm && npm run build:cjs",
-        "build:esm": "tsc",
-        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
-    },
-    "author": "Richard Min",
-    "license": "MIT",
-    "devDependencies": {
-        "@types/node": "^17.0.21",
-        "@types/react": "^17.0.37",
-        "@types/react-dom": "^17.0.11",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "typescript": "^4.5.2"
-    },
-    "peerDependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
-    }
+  "name": "richard-ui",
+  "version": "1.0.0",
+  "description": "This is the best Ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "RC"
+  },
+  "keywords": [
+    "Rc"
+  ],
+  "author": "Richard Min",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/node": "^20.9.4",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@types/styled-components": "^5.1.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.1"
+  }
 }
